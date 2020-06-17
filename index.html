@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <div id="model">
+        <section id="Calculator">
+            <input type="text" id="result" disabled>
+            <table>
+                <tr>
+                    <td><button value="7" onclick="numbers(7)">7</button></td>
+                    <td><button value="8" onclick="numbers(8)">8</button></td>
+                    <td><button value="9" onclick="numbers(9)">9</button></td>
+                    <td><button value="+" onclick="numbers(this.value)">+</button></td>
+                </tr>
+                <tr>
+                    <td><button value="4" onclick="numbers(4)">4</button></td>
+                    <td><button value="5" onclick="numbers(5)">5</button></td>
+                    <td><button value="6" onclick="numbers(6)">6</button></td>
+                    <td><button value="-" onclick="numbers(this.value)">-</button></td>
+                </tr>
+                <tr>
+                    <td><button value="1" onclick="numbers(1)">1</button></td>
+                    <td><button value="2" onclick="numbers(2)">2</button></td>
+                    <td><button value="3" onclick="numbers(3)">3</button></td>
+                    <td><button value="*" onclick="numbers(this.value)">*</button></td>
+                </tr>
+                <tr>
+                    <td><button value="0" onclick="numbers(0)">0</button></td>
+                    <td><button value="." onclick="numbers(this.value)">.</button></td>
+                    <td><button value="/" onclick="numbers(this.value)">/</button></td>
+                    <td><button value="=" id="equal" onclick="calculate()">=</button></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>
